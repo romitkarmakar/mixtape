@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>MixTape</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="MixTape">
+	<meta name="keywords" content="music, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Favicon -->
+	<link href="{{url_for('static',filename='img/favicon.ico') }}" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+ 
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/slicknav.min.css')}}"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"/>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section clearfix">
+		<a href="/" class="site-logo">
+			<img src="{{url_for('static',filename='img/logo.png') }}" alt="">
+		</a>
+	</header>
+	<!-- Header section end -->
+
+	<!-- Hero section -->
+	<section class="hero-section">
+		<div class="hero-slider owl-carousel">
+			<div class="hs-item">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hs-text">
+								<h2><span>Generate</span> your own music</h2>
+								<p>Generate High Quality music for your buisness & gain tracting like never before!</p>
+								<a href="instrument" class="site-btn">Generate Now!</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="hr-img">
+								<img src="{{url_for('static',filename='img/hero-bg.png') }}" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+	<!-- Intro section -->
+	<section class="intro-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="section-title">
+						<h2>Why is Music so Important?</h2>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<p>Music is an integral part of a promotional video; it builds up the identity of a brand or entity. 
+						Some brands are also associated with the music that they’ve played in their catchy 
+						advertisements. Brands go to the extent of collaborating with Industry-leading music 
+						companies & artists in order to produce the beautiful music, which would go along with their 
+						advertisements
+					</p>
+					<p>
+						Composition and Production of Music, however, is relatively expensive. The sheer cost of 
+						hiring a talented team, capable of producing the iconic music for your company, might cost 
+						you a fortune. While, the larger companies, with a lot of financial resources may be able to 
+						afford such deals, while the other business owners, like Start-ups & small businesses suffer. 
+						This results in further polarisation of the already polar economy. The richer companies get 
+						richer, by attracting a larger range of audiences, while the smaller businesses suffer from a 
+						lack of customer reach. Looking at the situation, with a fresh set of minds, can help develop 
+						solutions, which were previously not thought about. Artificial Intelligence in the last decade 
+						has achieved what was beyond imagination for the Human Kind.
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Intro section end -->
+
+	<!-- How section -->
+	<section class="how-section spad set-bg" data-setbg="{{url_for('static',filename='img/how-to-bg.jpg') }}">
+		<div class="container text-white">
+			<div class="section-title">
+				<h2>How it works</h2>
+			</div>
+			<div class="row">
+				
+				<div class="col-md-4">
+					<div class="how-item">
+						<div class="hi-icon">
+							<img src="{{url_for('static',filename='img/icons/pointer.png') }}" alt="">
+						</div>
+						<h4>Select your Preferences</h4>
+						<p> Select your choice of Instrument. A Random Number is to be entered post the Selection of the Instrument.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="how-item">
+						<div class="hi-icon">
+							<img src="{{url_for('static',filename='img/icons/brain.png') }}" alt="">
+						</div>
+						<h4>Let the Algorithm work</h4>
+						<p>The LSTM Algorithm Runs on a pre-defined Dataset to generate Music.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="how-item">
+						<div class="hi-icon">
+							<img src="{{url_for('static',filename='img/icons/smartphone.png') }}" alt="">
+						</div>
+						<h4>Listen to your music</h4>
+						<p>Listen to your newly generated music & pay to own sole rights for the same!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- How section end -->
+
+	<!-- Concept section -->
+	
+	<!--<section class="concept-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="section-title">
+						<h2>Our Concept & artists</h2>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="concept-item">
+						<img src="img/concept/1.jpg" alt="">
+						<h5>Soul Music</h5>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="concept-item">
+						<img src="img/concept/2.jpg" alt="">
+						<h5>Live Concerts</h5>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="concept-item">
+						<img src="img/concept/3.jpg" alt="">
+						<h5>Dj Sets</h5>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="concept-item">
+						<img src="img/concept/4.jpg" alt="">
+						<h5>Live Streems</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- Concept section end -->
+
+	<!-- Subscription section -->
+<!--	<section class="subscription-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="sub-text">
+						<h2>Music from a Starting price of 100 Rupees!</h2>
+						<h3>Start a free trial now</h3>
+						<p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<a href="#" class="site-btn">Try it now</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="sub-list">
+						<li><img src="img/icons/check-icon.png" alt="">Play any track</li>
+						<li><img src="img/icons/check-icon.png" alt="">Listen offline</li>
+						<li><img src="img/icons/check-icon.png" alt="">No ad interruptions</li>
+						<li><img src="img/icons/check-icon.png" alt="">Unlimited skips</li>
+						<li><img src="img/icons/check-icon.png" alt="">High quality audio</li>
+						<li><img src="img/icons/check-icon.png" alt="">Shuffle play</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>-->
+	<!-- Subscription section end -->
+
+	<!-- Premium section end -->
+	<section class="premium-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="section-title">
+						<h2>Why Choose us?</h2>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="premium-item">
+						<img src="{{url_for('static',filename='img/premium/1.jpg') }}" alt="">
+						<h4>Open Source</h4>
+						<p>Our Music Algorithm is always Open Source :)</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="premium-item">
+						<img src="{{url_for('static',filename='img/premium/2.jpg') }}" alt="">
+						<h4>High Quality</h4>
+						<p>Highest Quailty Industry Standard Sound Quality</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="premium-item">
+						<img src="{{url_for('static',filename='img/premium/3.jpg') }}" alt="">
+						<h4>Listen then Buy</h4>
+						<p>We let the customers experience what they're getting into </p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="premium-item">
+						<img src="{{url_for('static',filename='img/premium/4.jpg') }}" alt="">
+						<h4>Digital Rights of Music</h4>
+						<p>The Music Officially belongs to you. You'll have a digital certificate as a proof!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Premium section end -->
+
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row">
+				
+					<img src="{{url_for('static',filename='img/logo.png') }}" alt="">
+					<div class="new-footer">
+						Our Aim is building a platform, which can be accessed across the globe. The 
+						platform shall let the users pick their own customizations, the instrument, and certain other 
+						factors from Music Theory, which then will be used to run the Machine Learning Model built 
+						on Deep Learning Algorithms and Long Short-Term Memory. The Model would be trained 
+						prior to this, using sounds of various instruments. The ML model would produce music after 
+						learning the various combinations of chords which sound melodious. The users may then
+						purchase the music, which would then belong to the user or the company and may be used by 
+						them in various commercials, their social media handles and Digital Marketing.
+					</div>
+				
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+	
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{{url_for('static',filename='js/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jquery.slicknav.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/mixitup.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+	</body>
+</html>

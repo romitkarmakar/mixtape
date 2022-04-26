@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>MixTape</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="MixTape HTML Template">
+	<meta name="keywords" content="music, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="{{url_for('static',filename='img/favicon.ico')}}" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/slicknav.min.css')}}"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"/>
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section clearfix">
+		<a href="index.html" class="site-logo">
+			<img src="{{url_for('static',filename='img/logo.png')}}" alt="">
+		</a>
+	</header>
+	<!-- Header section end -->
+
+	<!-- Contact section -->
+	<section class="contact-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 p-0">
+					<!-- Map -->
+					<div class="map" style="background-color: white;"><img style="margin-top: 20px;" src="https://i.pinimg.com/originals/f8/c4/22/f8c422a0a0e6793b3f9113d419c5143a.gif"></div>
+				</div>
+				<div class="col-lg-6 p-0">
+					<div class="contact-warp">
+						<div class="section-title mb-0">
+							<h2>Payment</h2>
+							<br><br>
+						</div>
+						<form class="contact-from" style="margin-top: 0;">
+							<div class="row">
+								<div class="col-md-12">
+									<h3>Price: Rs. 350</h3>
+								</div>
+							</div>
+							<br><br>
+							<div class="row">
+								<div class="col-md-12">
+									<input type="text" placeholder="Name on the Card">
+								</div>
+								
+								<div class="col-md-12">
+									<input type="text" placeholder="Card Number">
+								</div>
+								<div class="col-md-6">
+									<input type="text" placeholder="Date of Expiry">
+								</div>
+								<div class="col-md-6">
+									<input type="text" placeholder="CVV">
+								</div>
+								<div class="col-md-12">
+									<button class="site-btn">Pay</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Blog section end -->
+
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row">
+				
+					<img src="{{url_for('static',filename='img/logo.png')}}" alt="">
+					<div class="new-footer">
+						Our Aim is building a platform, which can be accessed across the globe. The 
+						platform shall let the users pick their own customizations, the instrument, and certain other 
+						factors from Music Theory, which then will be used to run the Machine Learning Model built 
+						on Deep Learning Algorithms and Long Short-Term Memory. The Model would be trained 
+						prior to this, using sounds of various instruments. The ML model would produce music after 
+						learning the various combinations of chords which sound melodious. The users may then
+						purchase the music, which would then belong to the user or the company and may be used by 
+						them in various commercials, their social media handles and Digital Marketing.
+					</div>
+				
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+	
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{{url_for('static',filename='js/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jquery.slicknav.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/mixitup.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+	</body>
+</html>

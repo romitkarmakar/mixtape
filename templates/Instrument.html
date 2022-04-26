@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>MixTape</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="MixTape HTML Template">
+	<meta name="keywords" content="music, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Favicon -->
+	<link href="{{url_for('static',filename='img/favicon.ico') }}" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+ 
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/slicknav.min.css')}}"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"/>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	<div id="postloader">
+		<div class="animated_loader" style="display:none">
+			<img src="https://motiongraphicsphoebe.files.wordpress.com/2018/10/943d662b-25c9-42d6-9fd2-cc36d2ffab76.gif" width="100%" height="100%">
+		</div>
+	</div>
+	<!-- Header section -->
+	<header class="header-section clearfix">
+		<a href="/" class="site-logo">
+			<img src="{{url_for('static',filename='img/logo.png') }}" alt="">
+		</a>
+	</header>
+	<!-- Header section end -->
+
+	<!-- Category section -->
+	<section class="category-section spad">
+		<div class="container-fluid">
+			<div class="section-title">
+				<h2>Instruments</h2>
+				<h6>Select an Instrument to Generate the Music</h6>
+			</div>
+			<div class="container">
+				<div class="category-links">
+					<a href="" class="active">Single Instruments</a>
+					<a href="">Multiple Instruments (In Future Updates)</a>
+				</div>
+			</div>
+			<div class="category-items">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="category-item">
+							<img src="https://images.unsplash.com/photo-1552422535-c45813c61732?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt=""height="250" width="150">
+							<div class="ci-text">
+								<h4 style="color: white;">Piano</h4>
+							</div>
+							<a href="piano" class="ci-link" id="piano_button" onclick="clickedPiano()"><i class="fa fa-angle-double-right"></i></a>
+							<script>
+								function clickedPiano()
+								{
+									$("body").empty();
+									alert("Your Music is being Generated. The Process will take roughly 5 Minutes. Thanks for your patience!")
+									s='<img src="https://motiongraphicsphoebe.files.wordpress.com/2018/10/943d662b-25c9-42d6-9fd2-cc36d2ffab76.gif" width="100%" height="100%">'
+									s+='<style>body, html {'
+									s+=	'height: 100%;'
+									s+='background-color:black'
+									s+=	'}'
+									s+='background-position: center;'
+									s+= 'background-repeat: no-repeat;'
+									s+='background-size: cover;'
+									s+=	'<style>'
+									document.write(s)
+								}
+								
+							</script>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="category-item">
+							<img src="https://online.berklee.edu/takenote/wp-content/uploads/2020/07/learn_acoustic_blues_guitar_article_image.jpg" alt="" height="250" width="150">
+							<div class="ci-text">
+								<h4>Guitar</h4>
+							</div>
+							<a href="guitar" class="ci-link" onclick="clickedPiano()"><i class="fa fa-angle-double-right"></i></a>
+							<script>
+								function clickedGuitar()
+								{
+									$("body").empty();
+									alert("Your Music is being Generated. The Process will take roughly 5 Minutes. Thanks for your patience!")
+									s='<img src="https://motiongraphicsphoebe.files.wordpress.com/2018/10/943d662b-25c9-42d6-9fd2-cc36d2ffab76.gif" width="100%" height="100%">'
+									s+='<style>body, html {'
+									s+=	'height: 100%;'
+									s+='background-color:black'
+									s+=	'}'
+									s+='background-position: center;'
+									s+= 'background-repeat: no-repeat;'
+									s+='background-size: cover;'
+									s+=	'<style>'
+									document.write(s)
+								}
+								
+							</script>
+						</div>
+						
+					</div>
+					<div class="col-md-4">
+						<div class="category-item">
+							<img src="https://www.yamaha.com/en/musical_instrument_guide/common/images/violin/play_main.jpg" alt="" height="250" width="150">
+							<div class="ci-text">
+								<h4>Violin</h4>
+							</div>
+							<a href="" class="ci-link"><i class="fa fa-angle-double-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Category section end -->
+
+	<br><br><br><br>
+			<center><h3>More Instruments Coming Soon..</h3>
+			<h6>Stay Tuned</h6>
+			
+			</center>
+</div>
+<br><br><br><br><br><br>
+	<!-- Songs section end -->
+</section>
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row">
+				
+					<img src="{{url_for('static',filename='img/logo.png')}}" alt="">
+					<div class="new-footer">
+						Our Aim is building a platform, which can be accessed across the globe. The 
+						platform shall let the users pick their own customizations, the instrument, and certain other 
+						factors from Music Theory, which then will be used to run the Machine Learning Model built 
+						on Deep Learning Algorithms and Long Short-Term Memory. The Model would be trained 
+						prior to this, using sounds of various instruments. The ML model would produce music after 
+						learning the various combinations of chords which sound melodious. The users may then
+						purchase the music, which would then belong to the user or the company and may be used by 
+						them in various commercials, their social media handles and Digital Marketing.
+					</div>
+				
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Footer section end -->
+	
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{{url_for('static',filename='js/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jquery.slicknav.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/mixitup.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+	<!-- Audio Player and Initialization -->
+	<script src="{{url_for('static',filename='js/jquery.jplayer.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jplayerInit.js')}}"></script>
+
+	</body>
+</html>

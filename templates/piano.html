@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>MixTape</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="MixTape">
+	<meta name="keywords" content="music, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type='text/javascript' src='//www.midijs.net/lib/midi.js'></script>
+	<!-- Favicon -->
+	<link href="{{url_for('static',filename='img/favicon.ico') }}" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+ 
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css') }}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}"/>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/slicknav.min.css')}}"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"/>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section clearfix">
+		<a href="/" class="site-logo">
+			<img src="{{url_for('static',filename='img/logo.png') }}" alt="">
+		</a>
+	</header>
+	<!-- Header section end -->
+
+	<!-- Player section -->
+	<section class="player-section set-bg" data-setbg="img/player-bg.jpg">
+		<div class="player-box">
+			<div class="tarck-thumb-warp">
+				<div class="tarck-thumb">
+					<!--https://www.midijs.net/midijs_api.html-->
+					<img src="{{url_for('static',filename='img/wave-thumb.jpg')}}" alt="">
+					<button onclick=" MIDIjs.play('{{url_for('static',filename='test_output.mid') }}');" class="wp-play"></button>
+				</div>
+				
+			</div>
+			<div class="wave-player-warp">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="wave-player-info">
+							<h2>Piano Song</h2>
+							<p>Generated Especially for you!</p>
+							<div id="wavePlayer" class="clierfix">
+								<div class="wavePlayer_controls">
+									<!--<button class="jp-prev player_button" onclick="wavesurfer.skipBackward();"></button> -->
+									<button class="jp-play player_button" onclick=" MIDIjs.play('{{url_for('static',filename='test_output.mid') }}');"></button>
+									<!--<button class="jp-next player_button" onclick="wavesurfer.skipForward();"></button> -->
+									<button class="jp-stop player_button" onclick=" MIDIjs.stop('{{url_for('static',filename='test_output.mid') }}');"></button>
+								</div>
+							
+								<div id="currentTime"></div>
+								<div id="clipTime"></div>
+								<!-- Player Controls -->
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div id="audiowave">
+							<img src="https://media1.giphy.com/media/YzgvFJN9XBDBVkXsny/source.gif" >
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		<center>
+			<br><br><br><br>
+			<h2>Do you Like the Song? </h2><br>
+			<h4>Buy the Digital Rights & Own it!</h4>
+			<br>
+			<a href="buy_piano" class="site-btn" style="margin-bottom: 20px;">Buy Now</a>
+		</center>
+	</section>
+	<!-- Player section end -->
+
+	<!-- Songs details section -->
+
+	<!-- Songs details section -->
+	
+	
+
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row">
+				
+					<img src="{{url_for('static',filename='img/logo.png')}}" alt="">
+					<div class="new-footer">
+						Our Aim is building a platform, which can be accessed across the globe. The 
+						platform shall let the users pick their own customizations, the instrument, and certain other 
+						factors from Music Theory, which then will be used to run the Machine Learning Model built 
+						on Deep Learning Algorithms and Long Short-Term Memory. The Model would be trained 
+						prior to this, using sounds of various instruments. The ML model would produce music after 
+						learning the various combinations of chords which sound melodious. The users may then
+						purchase the music, which would then belong to the user or the company and may be used by 
+						them in various commercials, their social media handles and Digital Marketing.
+					</div>
+				
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+	
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{{url_for('static',filename='js/jquery-3.2.1.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jquery.slicknav.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/mixitup.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+	<!-- Audio Players js -->
+	<script src="{{url_for('static',filename='js/jquery.jplayer.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/wavesurfer.min.js')}}"></script>
+
+	<!-- Audio Players Initialization -->
+	<script src="{{url_for('static',filename='js/WaveSurferInit.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jplayerInit.js')}}"></script>
+
+	</body>
+</html>

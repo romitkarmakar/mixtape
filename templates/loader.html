@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading..</title>
+    <style>
+       body {
+  background:cornflowerblue;
+}
+
+.board {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:250px;
+}
+
+.left,
+.right {
+  height:50px;
+  width:8px;
+  background:white;
+  display: inline-block;
+  position:absolute;
+}
+
+.left {
+  left:0;
+  animation: position1 2s linear infinite;
+}
+.right {
+  right:0;
+  animation: position2 2s linear infinite;
+}
+.ball,
+.ballhit {
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background:white;
+  position:absolute;
+  animation: bounce 2s linear infinite;
+}
+.ballhit {
+  padding:4px;
+  margin:-6px 0 0 -6px;
+  border-radius:50%;
+  background:cornflowerblue;
+  border:2px #fff solid;
+  z-index:-1;
+  animation: bounce2 2s linear infinite;
+}
+@keyframes position1 {
+    0% {top:-60px;}
+  25% {top:0;}
+    50% {top:60px;}
+  75% {top:-60px;}
+    100% {top:-60px;}
+}
+@keyframes position2 {
+    0% {top:60px;}
+    25% {top:0;}
+    50% {top:-60px;}
+   75% {top:-60px;}
+    100% {top:60px;}
+}
+@keyframes bounce {
+    0% {top:-35px;left:10px;}
+  25% {top:25px;left:225px;}
+    50% {top:75px;left:10px;}
+  75% {top:-35px;left:225px;}
+  100% {top:-35px;left:10px;}
+}
+@keyframes bounce2 {
+    0% {top:-35px;left:10px; border:2px cornflowerblue solid;}
+  24% {border:2px cornflowerblue solid;}
+  25% {top:25px;left:225px; border:2px #fff solid;}
+  49% {border:2px cornflowerblue solid;}
+    50% {top:75px;left:10px; border:2px #fff solid;}
+  74% {border:2px cornflowerblue solid;}
+  75% {top:-35px;left:225px; border:2px #fff solid;}
+  99% {border:2px cornflowerblue solid;}
+  100% {top:-35px;left:10px; border:2px #fff solid;}
+}
+.credit {
+  position: absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  margin:0 0 20px;
+  color:rgba(255,255,255,.5);
+  text-transform:uppercase;
+  font-size:11px;
+  font-family:sans-serif,helvetica;
+  letter-spacing:.5px;
+}
+.credit a {
+  color:#fff;
+}
+.text{
+    color:white;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="board">
+        <div class="left">
+        </div>
+        <div class="right">
+        </div>
+        <div class="ball">
+        </div>
+        <div class="ballhit">
+        </div>
+      </div>
+      <div class="text">
+          <h2>Please Wait. Your Song is being built. </h2>
+          <h3>This may take upto 8 Minutes....</h3>
+      </div>
+      
+
+</body>
+</html>
