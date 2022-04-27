@@ -9,8 +9,12 @@ from keras.models import Sequential, load_model
 from keras.layers import *
 from keras.callbacks import ModelCheckpoint, EarlyStopping
 from flask import Flask, render_template, request
+import time
 
 def generate():
+    time.sleep(10)
+    return
+
     with open("notes", 'rb') as f:
         notes= pickle.load(f)
 
